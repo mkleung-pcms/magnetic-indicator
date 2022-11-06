@@ -1,6 +1,7 @@
 input.onButtonPressed(Button.A, function () {
     status = 3 - status
     led.setBrightness(128)
+    basic.clearScreen()
     basic.showNumber(input.magneticForce(Dimension.X))
     status = 3 - status
 })
